@@ -21,7 +21,6 @@
         }
         h2 { font-size: 1.5rem; margin-bottom: 25px; color: #1a1a1a; }
 
-        /* Tabs Estilo Imagen */
         .tabs {
             display: flex;
             gap: 10px;
@@ -41,7 +40,6 @@
         .btn-ingreso.active { background-color: #27ae60; color: white; }
         .inactive { background-color: #f1f5f4; color: #4b5563; }
 
-        /* Formulario */
         .form-group { margin-bottom: 18px; }
         label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem; }
         input, select {
@@ -56,7 +54,6 @@
         }
         input:focus { border-color: #ff6b00; }
 
-        /* Botón Registro */
         .submit-btn {
             width: 100%;
             padding: 15px;

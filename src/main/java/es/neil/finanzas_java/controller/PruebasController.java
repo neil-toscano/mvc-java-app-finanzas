@@ -41,7 +41,6 @@ public class PruebasController {
                 System.out.println("Email encontrado: " + userEmail);
             }
 
-            // Pasamos la lista al JSP con el nombre "listaEmails"
             models.put("listaEmails", emails);
 
         } catch (SQLException e) {
