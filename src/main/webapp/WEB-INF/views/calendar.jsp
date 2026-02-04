@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <style>
-    /* Estilos del encabezado del mes */
     .calendar-header {
         display: flex;
         justify-content: space-between;
@@ -16,7 +15,6 @@
         text-transform: capitalize;
     }
 
-    /* Contenedor de botones de navegación */
     .nav-group { display: flex; gap: 8px; }
     .nav-link {
         padding: 8px 16px;
@@ -31,7 +29,6 @@
     }
     .nav-link:hover { background: #f9fafb; border-color: #d1d5db; }
 
-    /* Cuadrícula real del calendario */
     .calendar-grid {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -45,7 +42,6 @@
         padding-bottom: 15px;
     }
 
-    /* Celdas de los días */
     .day-cell {
         background: #f8fafc;
         border-radius: 16px;
@@ -60,9 +56,8 @@
     }
     .day-cell:hover { background: #f1f5f9; transform: translateY(-2px); }
 
-    /* Estado cuando un día está seleccionado */
     .day-cell.active {
-        background: #4d7c0f; /* Verde oscuro */
+        background: #4d7c0f;
         border-color: #365314;
     }
     .day-cell.active .day-num, .day-cell.active .day-amount {
@@ -76,15 +71,13 @@
         font-size: 1.1rem;
     }
 
-    /* Estilo para los montos (Rojo para gastos por defecto) */
     .day-amount {
         font-size: 0.85rem;
         font-weight: 700;
         color: #991b1b;
     }
-    .amount-pos { color: #166534; } /* Verde para ingresos */
+    .amount-pos { color: #166534; }
 
-    /* Celdas vacías (espacios iniciales) */
     .empty-cell { background: transparent; cursor: default; }
 </style>
 

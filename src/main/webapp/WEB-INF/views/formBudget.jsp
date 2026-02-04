@@ -40,7 +40,6 @@
 </form>
 
 <script>
-    // Listas cargadas desde el controlador para que el switch funcione
     const expenseCats = [
         <c:forEach var="c" items="${expenseCategories}">
         {id: ${c.id}, name: '${c.name}'},

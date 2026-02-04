@@ -73,7 +73,6 @@ public class TransactionController {
         } catch (Exception e) {
             models.put("error", "Error interno al guardar: " + e.getMessage());
 
-            // 3. También aquí debes recargar si hay error de base de datos
             models.put("incomeCategories", categoryService.findByType("income"));
             models.put("expenseCategories", categoryService.findByType("expense"));
 

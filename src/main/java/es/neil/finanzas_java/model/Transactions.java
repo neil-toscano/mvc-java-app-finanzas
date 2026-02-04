@@ -15,11 +15,9 @@ public class Transactions {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    // Constructor vacío (Necesario para frameworks)
     public Transactions() {
     }
 
-    // Constructor para insertar nuevos datos (sin ID ni fechas automáticas)
     public Transactions(Integer userId, BigDecimal amount, Integer categoryId, String description, LocalDate date, String type) {
         this.userId = userId;
         this.amount = amount;
@@ -29,7 +27,6 @@ public class Transactions {
         this.type = type;
     }
 
-    // Getters y Setters
     public Integer getId() { return id; }
     public void setId(Integer id) { this.id = id; }
 

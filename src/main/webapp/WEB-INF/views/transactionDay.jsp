@@ -83,7 +83,6 @@
             <tr>
                 <td>
                         <span style="color: #1e293b; font-weight: 500;">
-                            <%-- Aquí podrías mostrar el nombre de la categoría si haces un JOIN en el SQL --%>
                             Cat #${t.categoryId}
                         </span>
                 </td>
@@ -102,7 +101,6 @@
 <%--                    <c:url var="urlBorrar" value="/dashboard/delete">--%>
 <%--                        <c:param name="id" value="${t.id}" />--%>
 <%--                    </c:url>--%>
-                        <%-- Botones listos con el ID de la transacción --%>
                             <button type="button" class="btn-action btn-edit"
                                     onclick="openEditModal('${t.id}', '${t.amount}', '${t.description}')">
                                 Editar

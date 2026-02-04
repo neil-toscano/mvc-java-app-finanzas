@@ -87,7 +87,6 @@
     <br/>
     <div class="card">
         <h2>Registrar movimiento</h2>
-        <%-- Asegúrate de que el nombre del archivo sea el correcto --%>
         <jsp:include page="formBudget.jsp" />
     </div>
 
